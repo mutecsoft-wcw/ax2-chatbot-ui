@@ -44,16 +44,18 @@ export const textInputStyles = {
     borderRadius: "12px",
     flex: 1, 
     backgroundColor: "#ffffff",
-    padding: "8px 12px",
+    padding: "8px",
     display: "flex",
     alignItems: "center",
     minWidth: "0", 
+    width: "70%",
   },
   text: {
     fontSize: "14px",
     color: "#333",
     outline: "none",
   },
+  characterLimit: 10
 };
 
 export const submitButtonStyles = {
@@ -61,23 +63,19 @@ export const submitButtonStyles = {
   submit: {
     container: {
       default: {
-        // backgroundColor: "#003963",
-        // borderRadius: "8px",
-        // minWidth: "20px",
-        // height: "45px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         marginLeft: "8px",
-        marginBottom: "3px",
         fontWeight: "bold",
-        flexShrink: 0,
+        flexShrink: "0",
+        height: "100%"
       },
     },
     text: {
       content: "전송",
       styles: {
-        default: { color: "gray", fontSize: "16px", fontWeight: "bold" },
+        default: { color: "gray", fontSize: "16px", fontWeight: "bold", paddingTop: "30px" },
       },
     },
     svg: { content: "" },
@@ -96,7 +94,7 @@ export const submitButtonStyles = {
 export const inputAreaStyle = {
   backgroundColor: "#ffffff",
   borderTop: "1px solid #e0e0e0",
-  padding: "15px 20px",
+  padding: "10px 60px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -108,21 +106,19 @@ export const reportUploadButtonStyles = [
     position: "outside-start",
     styles: {
       button: {
-        styles: {
-          container: {
-            default: {
-
-            },
-          },
-        },
         default: {
           svg: {
             content: `<svg viewBox="0 0 139 133" xmlns="http://www.w3.org/2000/svg"><path d="M93,90.8H49V51.5H32.3L71,13.7l38.7,37.8H93V90.8L93,90.8z M111,109.7c2.6,0,4.7-2.1,4.7-4.7V75.9h11.2v29.8 c0,8.4-6.8,15.2-15.2,15.2H30.4c-8.4,0-15.2-6.8-15.2-15.2V75.9h11.2V105c0,2.6,2.1,4.7,4.7,4.7H111L111,109.7z"/></svg>`,
+            styles: {
+                default: {
+                    paddingTop: "30px",
+                }
+            }
           },
           text: {
             content: "",
             styles: {
-              default: { color: "white", fontSize: "12px" },
+              default: { color: "white", fontSize: "12px", },
             },
           },
           container: {
@@ -131,7 +127,8 @@ export const reportUploadButtonStyles = [
                 alignItems: "center",
                 justifyContent: "center",
                 marginRight: "10px", // 입력창과의 간격
-                flexShrink: 0,
+                flexShrink: "0",
+                height: "100%"
             },
           },
         },
