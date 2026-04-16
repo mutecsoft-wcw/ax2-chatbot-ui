@@ -1,7 +1,7 @@
 export const chatStyle = {
   width: "100%",
   maxWidth: "800px",
-  height: "calc(100vh - 100px)",
+  height: "100%",
   borderRadius: "24px",
   backgroundColor: "#ffffff",
   boxShadow: "0 15px 35px rgba(0, 0, 0, 0.1)",
@@ -54,12 +54,12 @@ export const textInputStyles = {
     fontSize: "14px",
     color: "#333",
     outline: "none",
+    marginLeft: "10px"
   },
-  characterLimit: 10
 };
 
 export const submitButtonStyles = {
-  position: "outside-end",
+  position: "inside-end",
   submit: {
     container: {
       default: {
@@ -75,7 +75,7 @@ export const submitButtonStyles = {
     text: {
       content: "전송",
       styles: {
-        default: { color: "gray", fontSize: "16px", fontWeight: "bold", paddingTop: "30px" },
+        default: { color: "gray", fontSize: "16px", fontWeight: "bold", paddingTop: "30px", marginRight: "10px" },
       },
     },
     svg: { content: "" },
@@ -94,16 +94,17 @@ export const submitButtonStyles = {
 export const inputAreaStyle = {
   backgroundColor: "#ffffff",
   borderTop: "1px solid #e0e0e0",
-  padding: "10px 60px",
+  padding: "10px",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   boxSizing: "border-box",
+//   width: "100%",
 };
 
 export const reportUploadButtonStyles = [
   {
-    position: "outside-start",
+    position: "inside-start",
     styles: {
       button: {
         default: {
@@ -127,6 +128,7 @@ export const reportUploadButtonStyles = [
                 alignItems: "center",
                 justifyContent: "center",
                 marginRight: "10px", // 입력창과의 간격
+                marginLeft: "10px",
                 flexShrink: "0",
                 height: "100%"
             },

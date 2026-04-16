@@ -22,7 +22,7 @@ const Example1 = () => {
 
       {/* 중앙 섹션: 시원한 여백과 큰 타이틀 */}
       <main className="hero-section">
-        <h2 className="main-title">궁금하신 건강 정보가 있으신가요?</h2>
+        <h2 className="main-title">궁금하신 건강 정보가 <br />있으신가요?</h2>
         
         <div className="search-container">
           <input 
