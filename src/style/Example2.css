@@ -2,6 +2,7 @@
 .landing-page {
     width: 100%;
     height: 100vh;
+    height: 100%;
     background-color: #f7f9fc;
     font-family: 'Pretendard', sans-serif;
     display: flex;

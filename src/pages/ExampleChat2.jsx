@@ -4,15 +4,10 @@ import Icon from '../components/Icon';
 import '../style/ExampleChat2.css';
 import { DeepChat } from 'deep-chat-react';
 import * as CS from '../style/ExampleChatStyle2';
+import * as history from '../example-history/ExampleHistory';
 
 const ExampleChat2 = () => {
     const navigate = useNavigate();
-
-
-    const history = [
-        { role: 'user', text: 'Hey, how are you today?' },
-        { role: 'ai', text: 'I am doing very well!' },
-    ];
 
     return (
         <div className="chat-page">
@@ -39,7 +34,7 @@ const ExampleChat2 = () => {
                         placeholder: { text: '건강 관련 궁금한 내용을 입력하세요.' }
                     }}
                     submitButtonStyles={CS.submitButtonStyles}
-                    history={history}
+                    history={history.loadHistory(2)}
                 />
             </main>
         </div>

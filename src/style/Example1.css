@@ -1,12 +1,13 @@
 /* 기본 배경과 폰트 설정 */
 .landing-page {
     width: 100%;
-    height: 100vh;
+    height: calc(100dvh - 70px); 
     background-color: #f7f9fc;
     font-family: 'Pretendard', sans-serif;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    position: relative;
   }
   
   /* 헤더: 고정된 높이와 얇은 경계선 */

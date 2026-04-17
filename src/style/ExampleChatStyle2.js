@@ -14,10 +14,12 @@ export const messageStyles = {
   default: {
     shared: {
       bubble: {
-        maxWidth: "100%",
+        maxWidth: "85%",
         backgroundColor: "unset",
-        marginTop: "10px",
-        marginBottom: "10px",
+        marginTop: "20px",
+        marginBottom: "20px",
+        wordBreak: "break-word",
+        whiteSpace: "pre-wrap",
       },
     },
     user: { bubble: { marginRight: "0px", color: "black" } },
@@ -40,7 +42,7 @@ export const inputAreaStyle = {
   backgroundColor: "#ffffff",
   borderTop: "1px solid #e0e0e0",
   padding: "10px",
-//   display: "flex",
+  display: "flex",
 //   alignItems: "center",
 //   justifyContent: "center",
   boxSizing: "border-box",
