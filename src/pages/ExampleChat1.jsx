@@ -27,6 +27,7 @@ const ExampleChat1 = () => {
                     demo={true}
                     chatStyle={CS.chatStyle}
                     messageStyles={CS.messageStyles}
+                    names={CS.nameStyles}
                     customButtons={ CS.reportUploadButtonStyles }
                     inputAreaStyle={CS.inputAreaStyle}
                     textInput={{

@@ -26,15 +26,13 @@ export const messageStyles = {
 };
 
 export const avatarsStyles = {
-  default: {
-    styles: {
-      position: "end",
-      container: { marginLeft: "12px", marginRight: "5px" },
-    },
-  },
   ai: {
     src: aiAvarta,
-    styles: { position: "start", avatar: { paddingTop: "6px" } },
+    styles: { position: "start", container: { marginLeft: "12px", marginRight: "5px" }, avatar: { paddingTop: "6px" } },
+  },
+  user: {
+    src: "none",
+    styles: { position: "end", container: { marginRight: "12px", marginLeft: "5px" }},
   },
 };
 

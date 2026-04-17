@@ -11,6 +11,22 @@ export const chatStyle = {
   boxSizing: "border-box",
 };
 
+export const nameStyles = {
+    default: {
+        style: {
+            fontSize: '16px',
+            marginTop: '14px',
+            width: '45px'
+        }
+    },
+    ai: {
+        text: '챗봇',
+    },
+    user: {
+        text: '사용자',
+    }
+}
+
 export const messageStyles = {
   default: {
     ai: {
@@ -18,7 +34,7 @@ export const messageStyles = {
         backgroundColor: "#f0f2f5",
         color: "#333",
         borderRadius: "15px",
-        borderTopLeftRadius: "2px",
+        // borderTopLeftRadius: "2px",
         fontSize: "15px",
         lineHeight: "1.6",
         padding: "10px",
@@ -28,8 +44,8 @@ export const messageStyles = {
       bubble: {
         backgroundColor: "#003963",
         color: "#ffffff",
-        borderRadius: "15px",
-        borderTopRightRadius: "2px",
+        borderRadius: "12px",
+        // borderTopRightRadius: "2px",
         fontSize: "15px",
         padding: "10px",
       },
