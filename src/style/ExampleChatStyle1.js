@@ -1,6 +1,5 @@
 export const chatStyle = {
   width: "100%",
-  maxWidth: "800px",
   height: "100%",
   borderRadius: "24px",
   backgroundColor: "#ffffff",
